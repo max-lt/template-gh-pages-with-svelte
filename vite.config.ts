@@ -4,5 +4,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [tailwindcss(), sveltekit()],
-  base: '/demo-gh-pages-with-svelte/'
+  base: '/template-gh-pages-with-svelte/'
 });
