@@ -114,7 +114,7 @@ bun format
 
 > This will create a GitHub Actions workflow that builds and deploys the SvelteKit app to GitHub Pages on every push to the main branch.
 
-See [.github/workflows/gh-pages.yml](.github/workflows/gh-pages.yml) for the full content of the workflow file.
+See [.github/workflows/gh-pages.yml](https://github.com/max-lt/template-gh-pages-with-svelte/blob/main/.github/workflows/gh-pages.yml) for the full content of the workflow file.
 
 ### Commit and deploy to GitHub Pages
 
