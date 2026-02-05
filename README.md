@@ -12,11 +12,11 @@
 # Go to your projects folder
 cd ~/projects
 
-bunx sv create demo-gh-pages-with-svelte
+bunx sv create gh-pages-with-svelte
 ```
 
 ```bash
-% bunx sv create demo-gh-pages-with-svelte
+% bunx sv create gh-pages-with-svelte
 
 ┌  Welcome to the Svelte CLI! (v0.11.4)
 │
@@ -61,11 +61,11 @@ bunx sv create demo-gh-pages-with-svelte
 └  You're all set!
 ```
 
-### Open your new app folder (here: demo-gh-pages-with-svelte)
+### Open your new app folder (here: gh-pages-with-svelte)
 
 ```bash
 # open with vscode
-code demo-gh-pages-with-svelte
+code gh-pages-with-svelte
 ```
 
 ```bash
@@ -90,17 +90,11 @@ bun add -D @sveltejs/adapter-static
 const config = {
 	kit: {
 -       adapter: adapter()
-+	    adapter: adapter({ fallback: 'index.html' })
++	    adapter: adapter({ fallback: 'index.html' }),
++       paths: { base: '/gh-pages-with-svelte' },
 ```
 
-#### Add base url in vite.config.js
-
-```diff
-export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()],
-+   base: '/demo-gh-pages-with-svelte/',
-});
-```
+> Note: Replace /gh-pages-with-svelte with your repository name.
 
 #### Edit default .prettierrc to use 2 spaces instead of tabs
 
