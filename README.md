@@ -135,3 +135,20 @@ git commit -m "Initial commit"
 git remote add origin git@github.com:<my-username>/<my-repo>.git
 git push -u origin main
 ```
+
+#### Enable GitHub Pages
+
+After pushing to GitHub, you need to enable GitHub Pages and configure it to use GitHub Actions:
+
+1. Go to your repository on GitHub
+2. Click on **Settings** (in the repository menu)
+3. In the left sidebar, click on **Pages** (under "Code and automation")
+4. Under **Build and deployment**:
+   - **Source**: Select **GitHub Actions** from the dropdown
+5. Wait for the GitHub Actions workflow to complete (check the **Actions** tab)
+6. Once the workflow is done, your site will be available at:
+   ```
+   https://<my-username>.github.io/<my-repo>/
+   ```
+
+> Note: The first deployment may take a few minutes. You can check the progress in the Actions tab.
